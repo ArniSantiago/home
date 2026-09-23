@@ -1,0 +1,47 @@
+/* Accessibility typography update: no page text below 16px. */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Tailwind utility classes used by the design site for captions, labels,
+   metadata, and helper copy. Larger heading classes are intentionally left
+   unchanged. */
+[class~="text-xs"],
+[class~="text-sm"],
+[class~="text-sm/relaxed"],
+[class~="text-[0.8rem]"],
+[class~="md:text-xs"],
+[class~="md:text-sm"],
+[class~="[&_[cmdk-group-heading]]:text-xs"],
+[class~="[&>span]:text-xs"] {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
+small,
+sub,
+sup {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+/* Keep notification text readable too. */
+[data-sonner-toast],
+[data-sonner-toast][data-styled="true"] [data-button] {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+button,
+input,
+textarea,
+select,
+option,
+input::placeholder,
+textarea::placeholder {
+  font-size: 16px !important;
+}

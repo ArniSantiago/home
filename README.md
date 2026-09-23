@@ -1,31 +1,26 @@
 # Arni Santiago — complete GitHub Pages package
 
-This package is ready to push to the public GitHub repository named `home`. It contains:
+This package contains the two standalone sites, all downloaded image/PDF assets, GitHub Pages project-route fixes, the portfolio lightbox chunk, and an accessibility stylesheet for the design site.
 
-- A root landing page at `index.html`
-- The Arni Design website at `arni-design/index.html`
-- The Email Design Portfolio at `arni-portfolio/index.html`
-- All 19 Arni Design image/PDF assets
-- All 21 Email Design Portfolio image assets
-- `.nojekyll` for static hosting
-- JavaScript route fixes for GitHub Pages project paths
+## Repository root
 
-## Expected URLs
+- `index.html` — landing page
+- `arni-design/` — design website
+- `arni-portfolio/` — email portfolio
+- `.nojekyll` — static hosting marker
+
+## URLs
 
 - https://arnisantiago.github.io/home/
 - https://arnisantiago.github.io/home/arni-design/
 - https://arnisantiago.github.io/home/arni-portfolio/
 
+## Revisions in this package
+
+- `arni-portfolio/assets/Lightbox-B8iNrwqT.js` fixes the dynamically imported lightbox error.
+- `arni-design/assets/accessibility-16px.css` sets a 16px minimum for body text, labels, captions, metadata, helper text, small text, and notifications while leaving larger headings larger.
+- `arni-design/index.html` links that stylesheet.
+
 ## Push with GitHub Desktop
 
-1. In GitHub Desktop, choose **File → Clone repository**.
-2. Select `ArniSantiago/home` and clone it to your computer.
-3. Open the cloned `home` folder in your file manager.
-4. Delete the old files inside it, but do not delete the hidden `.git` folder.
-5. Copy the contents of this package into the cloned `home` folder.
-6. Return to GitHub Desktop.
-7. Commit the changes to `main` with a message such as `Restore complete portfolio websites`.
-8. Click **Push origin**.
-9. In GitHub **Settings → Pages**, use **Deploy from a branch → main → /(root)**.
-
-The repository root must directly contain `index.html`, `arni-design/`, and `arni-portfolio/`. Do not place this package inside another nested folder.
+Clone `ArniSantiago/home`, preserve the hidden `.git` folder, replace the repository contents with this package contents, commit to `main`, and push origin. Configure Pages as **Deploy from a branch → main → /(root)**.
